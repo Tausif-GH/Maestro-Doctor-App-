@@ -1,0 +1,49 @@
+appId: sqh.jotno.doctor
+---
+- launchApp:
+    clearState: true
+
+#Log In
+- tapOn: "typeYourBMDC"
+- inputText: "2000"
+- scrollUntilVisible:
+    element: ${"typeYourPassword"}
+    direction: DOWN
+- tapOn: "typeYourPassword"
+- inputText: "ek911"
+- tapOn: "LogIn"
+- tapOn: "Smrity test hospital"
+
+
+#New Rx
+- tapOn: "patient"
+- scrollUntilVisible:
+    element: ${"Testy 01677576929 P-3EXBWTHC9"}
+    direction: DOWN
+- tapOn: "Testy
+01677576929
+P-3EXBWTHC9"
+- tapOn: "newRx"
+- tapOn:
+    text: "search Search complaint"
+- tapOn:
+    text: "search Search complaint"
+    #text: Search complaint
+    #- inputText: "Hello World"
+
+
+
+
+
+
+    #point: 967,2035
+#- tapOn: "New Rx"
+#- tapOn: "patientSearch"
+#- inputText: "01677576929"
+#- pressKey: Enter
+#- tapOn:
+#    point: 400,650
+#- tapOn: "appointment"
+#- swipe:
+#      direction: RIGHT
+#- tapOn: "Home"

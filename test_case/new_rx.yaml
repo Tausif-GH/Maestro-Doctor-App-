@@ -1,0 +1,19 @@
+appId: sqh.jotno.doctor
+---
+
+- runFlow: login.yaml # <-- Run commands from "login.yaml"
+#Create New Rx
+- tapOn: "patient"
+- scrollUntilVisible:
+    element: ${"New 01677576929 P-3EYBYCAJW"}
+    direction: DOWN
+- tapOn: "New
+01677576929
+P-3EYBYCAJW"
+- tapOn: "newRx"
+- tapOn: "update/saveRx"
+- tapOn: "SMS"
+- tapOn: "send"
+#- tapOn: "Email"
+#- inputText: "tausif@squarehealth.com.bd"   <--cant use due to window issue
+#- tapOn: "send"

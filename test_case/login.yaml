@@ -1,0 +1,15 @@
+appId: sqh.jotno.doctor
+---
+- launchApp:
+    clearState: true
+
+#Log In
+- tapOn: "typeYourBMDC"
+- inputText: "2000"
+- scrollUntilVisible:
+    element: ${"typeYourPassword"}
+    direction: DOWN
+- tapOn: "typeYourPassword"
+- inputText: "ek911"
+- tapOn: "LogIn"
+- tapOn: "Smrity test hospital "

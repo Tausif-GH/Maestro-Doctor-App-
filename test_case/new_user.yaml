@@ -1,0 +1,17 @@
+appId: sqh.jotno.doctor
+---
+- launchApp:
+    clearState: true
+
+- tapOn: "newUser"
+- tapOn:
+   id: name
+- inputText: "Test Grey"
+- tapOn:
+   id: phoneNumber
+- inputText: "01677576929"
+- tapOn:
+   id: bmdc
+- inputText: "024"
+- hideKeyboard
+- tapOn: "SUBMIT"

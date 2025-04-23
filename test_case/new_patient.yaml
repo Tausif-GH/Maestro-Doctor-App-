@@ -1,0 +1,16 @@
+appId: sqh.jotno.doctor
+---
+- runFlow: login.yaml # <-- Run commands from "login.yaml"
+
+#Create New Patient
+- tapOn: "patient"
+- tapOn: "newPatient"
+- tapOn: "patientName"
+- inputText: "New"
+- tapOn: "phoneNumber"
+- inputText: "01677576929"
+- tapOn: "ageYear"
+- inputText: "21"
+- tapOn: "male"
+- hideKeyboard
+- tapOn: "save"
