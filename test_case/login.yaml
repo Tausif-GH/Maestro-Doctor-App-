@@ -7,7 +7,7 @@ appId: sqh.jotno.doctor
 - tapOn: "typeYourBMDC"
 - inputText: "2000"
 - scrollUntilVisible:
-    element: ${"typeYourPassword"}
+    element: "typeYourPassword"
     direction: DOWN
 - tapOn: "typeYourPassword"
 - inputText: "ek911"

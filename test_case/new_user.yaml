@@ -3,6 +3,7 @@ appId: sqh.jotno.doctor
 - launchApp:
     clearState: true
 
+# New Doctor
 - tapOn: "newUser"
 - tapOn:
    id: name

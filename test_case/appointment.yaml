@@ -2,13 +2,23 @@ appId: sqh.jotno.doctor
 ---
 
 - runFlow: login.yaml # <-- Run commands from "login.yaml"
+
 #Create New Appointment
-- tapOn:
-    id:
-- tapOn: "select slot"
-- tapOn: "phoneNumber"
+- tapOn: "appointment"
+#- tapOn: # <-- "Book Appointment" id required
+- tapOn: "selectSlot"
+- tapOn: "selectDate"
+- tapOn: "29, Tuesday, April 29, 2025"
+- back
+- tapOn: "08:00 AM - 10:00 PM"
+- tapOn: "11:00 AM"
+- tapOn: "done"
+- tapOn: "typeYourPhoneNumber"
 - inputText: "016775756929"
-- tapOn: "patientName"
-- inputText: "test"
+- tapOn: "typeYourPatientName"
+- inputText: "test patient"
 - tapOn: "year"
-- inputText:
+- inputText: "23"
+- tapOn: "male"
+- tapOn: "New"
+- tapOn: "book"

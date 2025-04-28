@@ -7,29 +7,22 @@ appId: sqh.jotno.doctor
 - tapOn: "typeYourBMDC"
 - inputText: "2000"
 - scrollUntilVisible:
-    element: ${"typeYourPassword"}
+    element: "typeYourPassword"
     direction: DOWN
 - tapOn: "typeYourPassword"
 - inputText: "ek911"
 - tapOn: "LogIn"
-- tapOn: "Smrity test hospital"
+- tapOn: "Smrity test hospital "
 
 
 #New Rx
 - tapOn: "patient"
 - scrollUntilVisible:
-    element: ${"Testy 01677576929 P-3EXBWTHC9"}
+    element: "New 01677576929 P-3EYBYCAJW"
     direction: DOWN
-- tapOn: "Testy
-01677576929
-P-3EXBWTHC9"
-- tapOn: "newRx"
-- tapOn:
-    text: "search Search complaint"
-- tapOn:
-    text: "search Search complaint"
-    #text: Search complaint
-    #- inputText: "Hello World"
+
+
+
 
 
 
