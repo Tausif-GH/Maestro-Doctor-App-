@@ -2,17 +2,19 @@ appId: sqh.jotno.doctor
 ---
 - launchApp:
     clearState: true
+- waitForAnimationToEnd
 
 # New Doctor
+- assertVisible: "Doctor Registration"
 - tapOn: "newUser"
 - tapOn:
-   id: name
+    id: name
 - inputText: "Test Grey"
 - tapOn:
-   id: phoneNumber
+    id: phoneNumber
 - inputText: "01677576929"
 - tapOn:
-   id: bmdc
+    id: bmdc
 - inputText: "024"
 - hideKeyboard
 - tapOn: "SUBMIT"

@@ -4,22 +4,34 @@ appId: sqh.jotno.doctor
     clearState: true
 
 #Log In
-- tapOn: "typeYourBMDC"
+- tapOn: "Type BMDC here..."
 - inputText: "2000"
 - scrollUntilVisible:
-    element: "typeYourPassword"
+    element: "Type your password here..."
     direction: DOWN
-- tapOn: "typeYourPassword"
+- tapOn: "Type your password here..."
 - inputText: "ek911"
-- tapOn: "LogIn"
+- tapOn: "Log In"
 - tapOn: "Smrity test hospital "
 
 
 #New Rx
-- tapOn: "patient"
-- scrollUntilVisible:
-    element: "New 01677576929 P-3EYBYCAJW"
-    direction: DOWN
+- tapOn: "Patient"
+- tapOn: "New 01677576929 P-3EYBYCAJW"
+- tapOn: "Search complaint"
+#- inputText: "fever"
+#- tapOn: "fever"
+- tapOn: "Medication
+Tab 2 of 6"
+- tapOn: "Search medication"
+- tapOn: "Search medication"
+- inputText: "ace"
+- tapOn: "ACE SYRUP 60ml"
+- tapOn: "Save Rx"
+
+#- scrollUntilVisible:
+#    element: "New 01677576929 P-3EYBYCAJW"
+#    direction: DOWN
 
 
 

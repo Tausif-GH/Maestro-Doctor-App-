@@ -2,6 +2,7 @@ appId: sqh.jotno.doctor
 ---
 - launchApp:
     clearState: true
+- waitForAnimationToEnd
 
 #Log In
 - tapOn: "typeYourBMDC"
@@ -13,3 +14,12 @@ appId: sqh.jotno.doctor
 - inputText: "ek911"
 - tapOn: "LogIn"
 - tapOn: "Smrity test hospital "
+- assertVisible: "Appointment"
+#    text: "Appointment"
+#- swipe:
+#    direction: LEFT
+#- swipe:
+#      direction: LEFT
+#- swipe:
+#      direction: LEFT
+#- tapOn: $('(//android.view.View[@content-desc="bottomNav"])[4]')

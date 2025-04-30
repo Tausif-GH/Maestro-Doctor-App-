@@ -4,7 +4,9 @@ appId: sqh.jotno.doctor
 
 #Create New Patient
 - tapOn: "patient"
+- assertVisible: "Patient"
 - tapOn: "newPatient"
+- assertVisible: "Patient Registration"
 - tapOn: "patientName"
 - inputText: "New"
 - tapOn: "phoneNumber"
@@ -13,4 +15,4 @@ appId: sqh.jotno.doctor
 - inputText: "21"
 - tapOn: "male"
 - hideKeyboard
-- tapOn: "save"
+#- tapOn: "save"

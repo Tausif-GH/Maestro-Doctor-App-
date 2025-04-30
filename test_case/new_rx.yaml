@@ -4,13 +4,13 @@ appId: sqh.jotno.doctor
 
 #Create New Rx
 - tapOn: "patient"
+- assertVisible: "Patient"
 - scrollUntilVisible:
     element: "New 01677576929 P-3EYBYCAJW"
     direction: DOWN
-- tapOn: "New
-01677576929
-P-3EYBYCAJW"
+- tapOn: "New 01677576929 P-3EYBYCAJW"
 - tapOn: "newRx"
+- assertVisible: "title"
 - tapOn: "update/saveRx"
 - tapOn: "SMS"
 - tapOn: "send"
