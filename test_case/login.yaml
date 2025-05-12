@@ -15,6 +15,7 @@ appId: sqh.jotno.doctor
 - tapOn: "LogIn"
 - tapOn: "Smrity test hospital "
 - assertVisible: "Appointment"
+
 #    text: "Appointment"
 #- swipe:
 #    direction: LEFT

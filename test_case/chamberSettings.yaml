@@ -1,0 +1,25 @@
+appId: sqh.jotno.doctor
+---
+
+- runFlow: login.yaml # <-- Run commands from "login.yaml"
+
+#Chamber Settings
+#- tapOn: <-- "Profile" id required
+#- tapOn: <-- "Chamber Settings" id required
+- assertVisible: "General Tab 1 of 3"
+- tapOn: "edit"
+- tapOn: "phoneNumber"
+- inputText: "01792310222"
+- tapOn: "timePerPatient"
+- inputText: "20"
+#- runFlow:
+#    when:
+#      visible: "serial"
+#    commands:
+#       - tapOn: "slot"
+- tapOn: "serial"
+- tapOn: "enable"
+- tapOn: "waitingList"
+- inputText: "2"
+- tapOn: "Online"
+- tapOn: "save/update"
